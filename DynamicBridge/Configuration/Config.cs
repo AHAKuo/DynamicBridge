@@ -18,7 +18,7 @@ public class Config : IEzConfig
     public bool EnableHonorific = true;
     public bool EnablePenumbra = true;
     public bool EnableMoodles = true;
-    public bool EnableLoci = true;
+    public bool EnableLoci = false;
     public GlamourerNoRuleBehavior GlamNoRuleBehaviour = GlamourerNoRuleBehavior.RevertToNormal;
     public bool RevertBeforeAutomationRestore = false;
     public bool RevertGlamourerBeforeApply = false;

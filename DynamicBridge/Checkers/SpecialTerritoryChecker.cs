@@ -45,9 +45,9 @@ public static class SpecialTerritoryChecker
     private static readonly Dictionary<SpecialTerritory, Func<bool>> States = new()
     {
         [SpecialTerritory.House] = () => Houses.Contains(Svc.ClientState.TerritoryType),
-        [SpecialTerritory.Inn] = () => Inns.List.Contains(Svc.ClientState.TerritoryType),
+        [SpecialTerritory.Inn] = () => Inns.List.Contains((ushort)Svc.ClientState.TerritoryType),
         [SpecialTerritory.Apartment] = () => Apartments.Contains(Svc.ClientState.TerritoryType),
-        [SpecialTerritory.Residential_area] = () => ResidentalAreas.List.Contains(Svc.ClientState.TerritoryType),
+        [SpecialTerritory.Residential_area] = () => ResidentalAreas.List.Contains((ushort)Svc.ClientState.TerritoryType),
         [SpecialTerritory.Duty] = () => Svc.Condition[ConditionFlag.BoundByDuty56],
         [SpecialTerritory.Aquatic_Ocean] = () => Ocean.Contains(Svc.ClientState.TerritoryType),
         [SpecialTerritory.Aquatic_Lake] = () => Lake.Contains(Svc.ClientState.TerritoryType),

@@ -708,7 +708,7 @@ public unsafe class DynamicBridge : IDalamudPlugin
         }
     }
 
-    private void TerritoryChanged(ushort id)
+    private void TerritoryChanged(uint id)
     {
         SoftForceUpdate = true;
     }
